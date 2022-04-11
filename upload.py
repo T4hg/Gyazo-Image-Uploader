@@ -35,7 +35,7 @@ def gyazo():
     date = datetime.datetime.now()
     file_txt = open("Uploads.txt", "a+")
     file_txt.write(f"{date}\nImage ID: {resp['image_id']}\nURL: {resp['url']}\n")
-
+    file_txt.close()
     print(f"""
     {Fore.GREEN}If you like the app, don't forget to give it a {Fore.YELLOW}star {Fore.GREEN}on GitHub
 
